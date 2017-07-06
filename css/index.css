@@ -1,0 +1,27 @@
+.myHeader {
+    height: 650px;
+    width: 100%;
+    background-image: url("../image/header.jpg");
+    /*cover属性会剪裁图片*/
+    /*background-size: 100% 100%;*/
+    background-size: cover;
+    color: white;
+}
+.header-me{
+    border: #ededed 2px solid;
+    border-radius: 100px;
+
+}
+
+.footer-nav {
+    text-align: right;
+    list-style: none;
+}
+.footer-nav li {
+    display: inline;
+}
+/*除了第一个导航标签，其他的前面都加上"|"*/
+.footer-nav li:not(:first-child):before {
+    content: "|";
+    padding: 0px 10px;
+}
